@@ -1,0 +1,37 @@
+{
+  "personal": {
+    "name": "Cristian I. Iacob",
+    "title": "Software Engineer",
+    "workplace": "Haufe Group",
+    "birthday": "17.19.1991",
+    "email": "cristian.iacob91@yahoo.com",
+    "github": "https://github.com/CristianIacob"
+  },
+  "work": [
+    {
+      "company": "Haufe Group",
+      "startDate": "15.09.2015",
+      "endDate": "present",
+      "position": "Software Engineer",
+      "responsabilities": ["developed web applications", "worked on frontend, backend and pipelines", "mainly focused on frontend"]
+    },
+    {
+      "company": "Netex Consulting",
+      "startDate": "1.04.2015",
+      "endDate": "15.09.2015",
+      "position": "QA Engineer",
+      "responsabilities": ["tested web applications", "worked with Selenium Test Driver", "learned about SVN"]
+    }
+  ],
+  "education": [
+    {
+      "name": "UPT",
+      "location": "Timisoara",
+      "startDate": "24.09.2010",
+      "endDate": "15.07.2014",
+      "description": "something about the university",
+      "skills": ["Mathematics", "Computer Programming", "Computer Architecture", "Object Oriented Programming"],
+      "award": "Bachelor degree"
+    }
+  ]
+}
