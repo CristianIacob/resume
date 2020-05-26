@@ -33,7 +33,7 @@ function Education(props) {
 
   return (
     <Group>
-      <section className="w-full flex items-center ml-8">
+      <section className="w-full flex items-center">
         {education.map((education, i) => {
           return (
             <section key={`education-${i}`} className="flex flex-row w-full">

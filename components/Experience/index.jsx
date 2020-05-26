@@ -1,12 +1,8 @@
 import React from "react";
 import Group from "../Group";
 
-const sectionStyle = {
-  transition: "all ease-out 700ms",
-};
-
 const Company = (props) => {
-  return <h1 className="text-lg w-1/4">{props.name}</h1>;
+  return <h1 className="text-base md:w-1/4">{props.name}</h1>;
 };
 
 const Responsabilities = (props) => {
@@ -21,7 +17,7 @@ const Responsabilities = (props) => {
 
 const Job = (props) => {
   return (
-    <section className="flex flex-col ml-4">
+    <section className="flex flex-col md:ml-4">
       <h2 className="text-base">{props.position}</h2>
       <h4 className="text-sm font-sans">
         {props.startDate} - {props.endDate}
@@ -35,10 +31,12 @@ function Experience(props) {
   const workplaces = props.data;
   return (
     <Group>
-      <section style={sectionStyle} className="w-full flex flex-col items-start ml-8">
+      <section className="w-full flex flex-col items-start">
         {workplaces.map((work, i) => {
           return (
-            <section key={`workplace-${i}`} className={`flex w-full flex-row${i < workplaces.length - 1 ? " mb-6" : ""}`}>
+            <section
+              key={`workplace-${i}`}
+              className={`flex w-full text-left items-start flex-col md:flex-row${i < workplaces.length - 1 ? " mb-6" : ""}`}>
               <Company name={work.company} />
               <Job position={work.position} startDate={work.startDate} endDate={work.endDate} responsabilities={work.responsabilities} />
             </section>

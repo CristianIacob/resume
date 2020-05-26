@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="h-full">
       <div className="mx-auto">
-        <main className="container flex justify-center flex-wrap mx-auto">{children}</main>
+        <main className="container flex flex-col justify-center mx-auto">{children}</main>
       </div>
     </div>
   );
