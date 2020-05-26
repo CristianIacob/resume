@@ -1,25 +1,36 @@
 import React from "react";
 import Group from "../Group";
 
-const Company = (props) => {
-  return <h1 className="text-base md:w-1/4">{props.name}</h1>;
+const Position = (props) => {
+  return (
+    <div className='flex flex-row w-full items-center md:w-1/4'>
+      <h1 className='text-base text-lg font-bold'>{props.name}</h1>
+      <h4 className='flex text-xs font-sans mt-1 items-center ml-4 h-full sm:hidden'>
+        {props.startDate} - {props.endDate}
+      </h4>
+    </div>
+  );
 };
 
 const Responsabilities = (props) => {
-  return props.data.map((responsability, i) => {
-    return (
-      <span key={`responsability-${i}`} className="text-xs">
-        - {responsability}
-      </span>
-    );
-  });
+  return (
+    <ul className='text-xs mt-2'>
+      {props.data.map((responsability, i) => {
+        return (
+          <li key={`responsability-${i}`} className='list-inside list-disc'>
+            {responsability}
+          </li>
+        );
+      })}
+    </ul>
+  );
 };
 
 const Job = (props) => {
   return (
-    <section className="flex flex-col md:ml-4">
-      <h2 className="text-base">{props.position}</h2>
-      <h4 className="text-sm font-sans">
+    <section className='flex flex-col md:ml-4'>
+      <h2 className='text-sm italic mt-1 '>{props.company}</h2>
+      <h4 className='text-sm font-sans hidden sm:block'>
         {props.startDate} - {props.endDate}
       </h4>
       <Responsabilities data={props.responsabilities} />
@@ -31,14 +42,14 @@ function Experience(props) {
   const workplaces = props.data;
   return (
     <Group>
-      <section className="w-full flex flex-col items-start">
+      <section className='w-full flex flex-col items-start'>
         {workplaces.map((work, i) => {
           return (
             <section
               key={`workplace-${i}`}
               className={`flex w-full text-left items-start flex-col md:flex-row${i < workplaces.length - 1 ? " mb-6" : ""}`}>
-              <Company name={work.company} />
-              <Job position={work.position} startDate={work.startDate} endDate={work.endDate} responsabilities={work.responsabilities} />
+              <Position name={work.position} startDate={work.startDate} endDate={work.endDate} />
+              <Job company={work.company} startDate={work.startDate} endDate={work.endDate} responsabilities={work.responsabilities} />
             </section>
           );
         })}
