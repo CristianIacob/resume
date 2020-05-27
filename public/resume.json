@@ -13,14 +13,23 @@
       "startDate": "15.09.2015",
       "endDate": "present",
       "position": "Software Engineer",
-      "responsabilities": ["developed web applications", "worked on frontend, backend and pipelines", "mainly focused on frontend"]
+      "responsabilities": [
+        "developed web applications",
+        "took part in the complete dev. cycle of multiple projects",
+        "switched between multiple web frameworks",
+        "worked on frontend, backend and devops tasks",
+        "main focus was on frontend",
+        "made sure the UI/UX was consistent in the project",
+        "managed to promote more pair-programming and knowledge sharing within the team",
+        "mentored less experienced developers on the team"
+      ]
     },
     {
       "company": "Netex Consulting",
       "startDate": "1.04.2015",
       "endDate": "15.09.2015",
       "position": "QA Engineer",
-      "responsabilities": ["tested web applications", "worked with Selenium Test Driver", "learned about SVN"]
+      "responsabilities": ["tested a warehouse web application", "implemented and maintained automated tests", "created bug reports"]
     }
   ],
   "education": [
@@ -30,8 +39,39 @@
       "startDate": "24.09.2010",
       "endDate": "15.07.2014",
       "description": "something about the university",
-      "skills": ["Mathematics", "Computer Programming", "Computer Architecture", "Object Oriented Programming"],
-      "award": "Bachelor degree"
+      "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
+      "award": "Bachelor degree of Computer Science?"
     }
-  ]
+  ],
+  "language": {
+    "native": "Romanian",
+    "understanding": {
+      "listening": [{ "english": "C2" }, { "german": "C1" }],
+      "reading": [{ "english": "C2" }, { "german": "B2" }]
+    },
+    "speaking": {
+      "spoken interaction": [{ "english": "C2" }, { "german": "A2" }],
+      "spoken production": [{ "english": "C2" }, { "german": "A2" }]
+    },
+    "writing": ["C1", "B1"]
+  },
+  "skills": {
+    "soft-skills": [
+      "good communication skills",
+      "team oriented person",
+      "problem-solving attitude",
+      "capable of establishing priorities",
+      "capable of adapting and learning quickly",
+      "analytical thinking",
+      "critical thinking"
+    ],
+    "front-end": ["angular.js", "react.js", "next.js", "GWT", "jQuery", "asp.NET", "mobx", "CSS", "SCSS", "tailwindcss", "css modules"],
+    "back-end": ["node.js", "express.js", "axios", "restful api", "mongoDB"],
+    "devops": ["jenkins", "gitlab-ci", "azure container registry", "aws s3", "aws ses"],
+    "other": ["git", "github", "gitlab", "jira", "scrum", "npm", "yarn"]
+  },
+  "self": {
+    "hobbies": ["traveling", "movies", "video games", "board games"],
+    "interests": ["psychology", "UI/UX design", "mindfulness"]
+  }
 }

@@ -29,7 +29,6 @@ const Summary = (props) => {
 
 function Education(props) {
   const education = props.data;
-  console.log("Education -> education", education);
 
   return (
     <Group>
