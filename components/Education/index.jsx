@@ -2,26 +2,37 @@ import React from "react";
 import Group from "../Group";
 
 const Title = (props) => {
-  return <h1 className="w-1/4">{props.name}</h1>;
+  return (
+    <div className="flex flex-col w-full sm:flex-row sm:items-center md:w-1/4">
+      <h1 className="text-base text-base font-bold">{props.name}</h1>
+      <h4 className="flex text-xs font-sans mt-1 items-center h-full sm:hidden">
+        {props.startDate} - {props.endDate}
+      </h4>
+    </div>
+  );
 };
 
 const Skills = (props) => {
-  return props.skills.map((skill, i) => {
-    return (
-      <span key={`skill-${i}`} className="text-xs">
-        - {skill}
-      </span>
-    );
-  });
+  return (
+    <ul className="text-xs mt-2">
+      {props.skills.map((skill, i) => {
+        return (
+          <li key={`skill-${i}`} className="list-inside list-disc">
+            {skill}
+          </li>
+        );
+      })}
+    </ul>
+  );
 };
 
 const Summary = (props) => {
   return (
-    <section className="flex flex-col ml-4">
-      <h1>{props.description}</h1>
-      <h1 className="text-sm font-sans">
+    <section className="flex flex-col md:ml-4">
+      <h2 className="text-sm italic mt-1 ">{props.institution}</h2>
+      <h4 className="text-sm font-sans text-sm font-sans hidden sm:block">
         {props.startDate} - {props.endDate}
-      </h1>
+      </h4>
       <Skills skills={props.skills} />
     </section>
   );
@@ -31,13 +42,14 @@ function Education(props) {
   const education = props.data;
 
   return (
-    <Group>
-      <section className="w-full flex items-center">
+    <Group title="Education">
+      <section className="w-full flex flex-col items-start">
         {education.map((education, i) => {
           return (
-            <section key={`education-${i}`} className="flex flex-row w-full">
-              <Title name={education.name} />
+            <section key={`education-${i}`} className="flex w-full text-left items-start flex-col md:flex-row">
+              <Title name={education.award} startDate={education.startDate} endDate={education.endDate} />
               <Summary
+                institution={education.name}
                 startDate={education.startDate}
                 endDate={education.endDate}
                 description={education.description}
