@@ -34,13 +34,13 @@
   ],
   "education": [
     {
-      "name": "UPT",
+      "name": "Polytechnical University of Timisoara",
       "location": "Timisoara",
       "startDate": "24.09.2010",
       "endDate": "15.07.2014",
       "description": "something about the university",
       "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
-      "award": "Bachelor degree of Computer Science?"
+      "award": "Bachelor of Computer Science?"
     }
   ],
   "language": {
