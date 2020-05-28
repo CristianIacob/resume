@@ -40,20 +40,37 @@
       "endDate": "15.07.2014",
       "description": "something about the university",
       "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
-      "award": "Bachelor of Computer Science?"
+      "award": "Bachelor of Computer Science"
     }
   ],
-  "language": {
-    "native": "Romanian",
-    "understanding": {
-      "listening": [{ "english": "C2" }, { "german": "C1" }],
-      "reading": [{ "english": "C2" }, { "german": "B2" }]
-    },
-    "speaking": {
-      "spoken interaction": [{ "english": "C2" }, { "german": "A2" }],
-      "spoken production": [{ "english": "C2" }, { "german": "A2" }]
-    },
-    "writing": ["C1", "B1"]
+  "languages": {
+    "native": "romanian",
+    "language": [
+      {
+        "name": "english",
+        "understanding": {
+          "listening": "C2",
+          "reading": "C2"
+        },
+        "speaking": {
+          "interaction": "C2",
+          "production": "C2"
+        },
+        "writing": "C1"
+      },
+      {
+        "name": "german",
+        "understanding": {
+          "listening": "C1",
+          "reading": "B2"
+        },
+        "speaking": {
+          "interaction": "A2",
+          "production": "A2"
+        },
+        "writing": "B1"
+      }
+    ]
   },
   "skills": {
     "soft-skills": [

@@ -12,21 +12,21 @@ import resume from "../public/resume.json";
  */
 
 function Home() {
-  const { personal, work, education } = resume;
+  const { personal, work, education, languages } = resume;
   return (
     <>
       <Head>
         <title>Cristian Iacob</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link href='https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap' rel='stylesheet' />
-        <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap' rel='stylesheet' />
+        <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
       </Head>
 
       <Layout>
         <PersonalInfo data={personal} />
         <Experience data={work} />
         <Education data={education} />
-        <Linguistics />
+        <Linguistics data={languages} />
         <Hobbies />
       </Layout>
     </>
