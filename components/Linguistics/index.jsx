@@ -21,16 +21,15 @@ const ListItem = (props) => {
 const Languages = (props) => {
   return (
     <>
-      {props.lang.map((language) => {
+      {props.lang.map((language, i) => {
         return (
-          <span className="flex flex-col mb-2">
+          <span key={`lang-${i}`} className="flex flex-col mb-2">
             <h4 className="mr-2 capitalize font-bold">{language.name}</h4>
             <ul className="list-inside capitalize text-xs">
               <li>
                 <span className="capitalize mr-2">speaking</span>
                 <span>{`${language.speaking.interaction}(Interaction) - ${language.speaking.production}(Production)`}</span>
               </li>
-
               <ul>
                 <li>understanding</li>
                 <ul className="ml-4 list-inside list-disc text-xs mb-2">
@@ -38,7 +37,10 @@ const Languages = (props) => {
                   <ListItem text={"reading"} value={language.understanding.reading} />
                 </ul>
               </ul>
-              <li>writing</li>
+              <li>
+                <span className="capitalize mr-2">writing</span>
+                <span className="font-bold">{`${language.writing}`}</span>
+              </li>
             </ul>
           </span>
         );
