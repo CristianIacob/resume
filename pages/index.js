@@ -12,7 +12,7 @@ import resume from "../public/resume.json";
  */
 
 function Home() {
-  const { personal, work, education, languages } = resume;
+  const { personal, work, education, languages, self } = resume;
   return (
     <>
       <Head>
@@ -27,7 +27,7 @@ function Home() {
         <Experience data={work} />
         <Education data={education} />
         <Linguistics data={languages} />
-        <Hobbies />
+        <Hobbies data={self} />
       </Layout>
     </>
   );

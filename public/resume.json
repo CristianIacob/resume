@@ -88,7 +88,7 @@
     "other": ["git", "github", "gitlab", "jira", "scrum", "npm", "yarn"]
   },
   "self": {
-    "hobbies": ["traveling", "movies", "video games", "board games"],
+    "activities": ["traveling", "movies", "video games", "board games"],
     "interests": ["psychology", "UI/UX design", "mindfulness"]
   }
 }
