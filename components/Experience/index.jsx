@@ -1,5 +1,6 @@
 import React from "react";
 import Group from "../Group";
+import { briefcase } from "../../Assets/svg/dynamic-svg";
 
 const Position = (props) => {
   return (
@@ -41,7 +42,7 @@ const Job = (props) => {
 function Experience(props) {
   const workplaces = props.data;
   return (
-    <Group title="Experience">
+    <Group title="Experience" icon={briefcase}>
       <section className="w-full flex flex-col items-start">
         {workplaces.map((work, i) => {
           return (

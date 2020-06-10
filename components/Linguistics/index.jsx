@@ -1,5 +1,6 @@
 import React from "react";
 import Group from "../Group";
+import { translate } from "../../Assets/svg/dynamic-svg";
 
 const NativeLanguage = (props) => {
   return (
@@ -51,7 +52,7 @@ const Languages = (props) => {
 
 function Linguistics(props) {
   return (
-    <Group title="Languages">
+    <Group title="Languages" icon={translate}>
       <section className="w-full flex-col items-center">
         <NativeLanguage lang={props.data.native} />
         <Languages lang={props.data.language} />

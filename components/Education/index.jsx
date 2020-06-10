@@ -1,5 +1,6 @@
 import React from "react";
 import Group from "../Group";
+import { library } from "../../Assets/svg/dynamic-svg";
 
 const Title = (props) => {
   return (
@@ -42,7 +43,7 @@ function Education(props) {
   const education = props.data;
 
   return (
-    <Group title="Education">
+    <Group title="Education" icon={library}>
       <section className="w-full flex flex-col items-start">
         {education.map((education, i) => {
           return (

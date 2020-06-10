@@ -23,11 +23,15 @@ function Home() {
       </Head>
 
       <Layout>
-        <PersonalInfo data={personal} />
-        <Experience data={work} />
-        <Education data={education} />
-        <Linguistics data={languages} />
-        <Hobbies data={self} />
+        <section className="flex flex-col">
+          <PersonalInfo data={personal} />
+        </section>
+        <section className="flex flex-col">
+          <Experience data={work} />
+          <Education data={education} />
+          <Linguistics data={languages} />
+          <Hobbies data={self} />
+        </section>
       </Layout>
     </>
   );

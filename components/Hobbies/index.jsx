@@ -1,5 +1,6 @@
 import React from "react";
 import Group from "../Group";
+import { puzzle } from "../../Assets/svg/dynamic-svg";
 
 const Title = (props) => {
   return (
@@ -33,9 +34,8 @@ const ListContainer = (props) => {
 
 function Hobbies(props) {
   const { activities, interests } = props.data;
-  console.log("Hobbies -> props", props);
   return (
-    <Group title="Hobbies">
+    <Group title="Hobbies" icon={puzzle}>
       <section className="w-full flex flex-col items-start">
         <section className={`mt-2 flex w-full text-left items-start flex-col`}>
           <Title name={"activities"} />
