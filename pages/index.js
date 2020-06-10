@@ -23,7 +23,7 @@ function Home() {
       </Head>
 
       <Layout>
-        <section className="flex flex-col">
+        <section className="flex flex-col lg:pr-12">
           <PersonalInfo data={personal} />
         </section>
         <section className="flex flex-col">
