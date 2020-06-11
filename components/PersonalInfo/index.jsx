@@ -40,9 +40,9 @@ const InfoList = (props) => {
 function PersonalInfo(props) {
   const { name, title, email, github, location } = props.data;
   return (
-    <section className="my-8 flex flex-col items-center sm:pl-5 md:flex-row lg:pl-0 lg:flex-col lg:my-0">
+    <section className="my-8 flex flex-col items-center lg:flex-row lg:pl-0 lg:flex-col lg:my-0">
       <Picture />
-      <section className="flex flex-col mt-3 items-center font-serif md:items-start md:ml-12 md:mt-0 lg:mt-3 lg:items-center lg:ml-0">
+      <section className="flex flex-col mt-3 items-center font-serif lg:mt-3 lg:items-center lg:ml-0">
         <Name name={name} />
         <JobTitle title={title} />
       </section>
