@@ -1,4 +1,5 @@
 import React from "react";
+import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
 
 /**
  * TODO: need contact info somewhere here; maybe right-side?
@@ -6,15 +7,50 @@ import React from "react";
  * maybe takeout the workplace from here
  * */
 
-function PersonalInfo(props) {
-  const { name, title, workplace } = props.data;
+const Picture = () => <img className="w-32 h-32 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} />;
+
+const Name = (props) => <h1 className="text-2xl font-sans font-bold lg:text-2xl lg:text-center">{props.name}</h1>;
+
+const JobTitle = (props) => <span className="text-base font-sans font-normal">{props.title}</span>;
+
+const InfoItem = (props) => (
+  <li className="py-2 px-4 flex items-center">
+    <span className="w-3 h-3 mr-3">{props.icon}</span>
+    {props.value}
+  </li>
+);
+
+const InfoList = (props) => {
   return (
-    <section className="w-full my-8 flex flex-col items-center sm:pl-5 md:flex-row lg:pl-0 lg:flex-col lg:my-0">
-      <img className="w-32 h-32 shadow-lg md:w-36 md:h-36 lg:w-24 lg:h-24 object-cover object-center rounded-full" src={`/profile.jpg`} />
-      <section className="flex flex-col mt-3 items-center md:items-start md:ml-12 md:mt-0 lg:mt-3 font-serif lg:items-center lg:ml-0">
-        <h1 className="text-2xl font-sans font-bold lg:text-lg lg:text-center">{name}</h1>
-        <span className="text-base font-sans font-medium text-blue-700 lg:text-sm">{title}</span>
+    <ul className="text-xs divide-y py-8">
+      <InfoItem icon={props.email.icon} value={props.email.value} />
+      <InfoItem icon={props.location.icon} value={props.location.value} />
+      <InfoItem
+        icon={props.code.icon}
+        value={
+          <a href={props.code.value} target="_blank">
+            Github
+          </a>
+        }
+      />
+    </ul>
+  );
+};
+
+function PersonalInfo(props) {
+  const { name, title, email, github, location } = props.data;
+  return (
+    <section className="my-8 flex flex-col items-center sm:pl-5 md:flex-row lg:pl-0 lg:flex-col lg:my-0">
+      <Picture />
+      <section className="flex flex-col mt-3 items-center font-serif md:items-start md:ml-12 md:mt-0 lg:mt-3 lg:items-center lg:ml-0">
+        <Name name={name} />
+        <JobTitle title={title} />
       </section>
+      <InfoList
+        email={{ icon: mail, value: email }}
+        location={{ icon: locationPin, value: location }}
+        code={{ icon: code, value: github }}
+      />
     </section>
   );
 }

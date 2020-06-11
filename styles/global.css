@@ -8,10 +8,6 @@ body {
   font-size: 18px;
 }
 
-html {
-  font: 112.5%/1.45em georgia, serif;
-}
-
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
