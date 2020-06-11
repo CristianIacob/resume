@@ -1,5 +1,4 @@
 import React from "react";
-import Group from "../Group";
 
 /**
  * TODO: need contact info somewhere here; maybe right-side?
@@ -10,10 +9,10 @@ import Group from "../Group";
 function PersonalInfo(props) {
   const { name, title, workplace } = props.data;
   return (
-    <section className="w-full my-8 flex flex-col items-center md:flex-row lg:flex-col lg:my-0">
+    <section className="w-full my-8 flex flex-col items-center sm:pl-5 md:flex-row lg:pl-0 lg:flex-col lg:my-0">
       <img className="w-32 h-32 shadow-lg md:w-36 md:h-36 lg:w-24 lg:h-24 object-cover object-center rounded-full" src={`/profile.jpg`} />
       <section className="flex flex-col mt-3 items-center md:items-start md:ml-12 md:mt-0 lg:mt-3 font-serif lg:items-center lg:ml-0">
-        <h1 className="text-2xl lg:text-lg font-sans font-bold">{name}</h1>
+        <h1 className="text-2xl font-sans font-bold lg:text-lg lg:text-center">{name}</h1>
         <span className="text-base font-sans font-medium text-blue-700 lg:text-sm">{title}</span>
       </section>
     </section>

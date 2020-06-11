@@ -23,10 +23,10 @@ function Home() {
       </Head>
 
       <Layout>
-        <section className="flex flex-col lg:pr-12">
+        <section className="flex flex-col lg:px-8 lg:pt-4 lg:w-1/4 xl:w-1/5">
           <PersonalInfo data={personal} />
         </section>
-        <section className="flex flex-col">
+        <section className="flex rounded mx-2 flex-col lg:w-3/4 xl:w-4/5 bg-gray-100 divide-y divide-gray-400">
           <Experience data={work} />
           <Education data={education} />
           <Linguistics data={languages} />
