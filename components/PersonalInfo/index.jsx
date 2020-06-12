@@ -1,38 +1,27 @@
 import React from "react";
 import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
 
-/**
- * TODO: need contact info somewhere here; maybe right-side?
- * need email, phone, github, linkedin(?)
- * maybe takeout the workplace from here
- * */
-
 const Picture = () => <img className="w-32 h-32 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} />;
 
-const Name = (props) => <h1 className="text-2xl font-sans font-bold lg:text-2xl lg:text-center">{props.name}</h1>;
+const Name = (props) => <h1 className="text-xl font-sans font-bold tracking-wide lg:text-2xl lg:text-center">{props.name}</h1>;
 
-const JobTitle = (props) => <span className="text-base font-sans font-normal">{props.title}</span>;
+const JobTitle = (props) => <span className="text-sm font-sans font-normal tracking-wide lg:text-base">{props.title}</span>;
 
 const InfoItem = (props) => (
-  <li className="py-2 px-4 flex items-center">
+  <li className="py-2 leading-relaxed px-4 flex items-center">
     <span className="w-3 h-3 mr-3">{props.icon}</span>
-    {props.value}
+    <a href={props.link} target="_blank" className="hover:text-blue-400">
+      {props.value}
+    </a>
   </li>
 );
 
 const InfoList = (props) => {
   return (
     <ul className="text-xs divide-y py-8">
-      <InfoItem icon={props.email.icon} value={props.email.value} />
-      <InfoItem icon={props.location.icon} value={props.location.value} />
-      <InfoItem
-        icon={props.code.icon}
-        value={
-          <a href={props.code.value} target="_blank">
-            Github
-          </a>
-        }
-      />
+      <InfoItem icon={props.email.icon} link={`mailto:${props.email.value}`} value={props.email.value} />
+      <InfoItem icon={props.location.icon} link={`https://goo.gl/maps/a86eeqDQjDMDjGDo7`} value={props.location.value} />
+      <InfoItem icon={props.code.icon} link={props.code.value} value={`Github`} />
     </ul>
   );
 };
