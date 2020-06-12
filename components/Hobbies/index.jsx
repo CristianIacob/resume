@@ -36,7 +36,7 @@ function Hobbies(props) {
   const { activities, interests } = props.data;
   return (
     <Group title="Hobbies" icon={puzzle}>
-      <section className="w-full flex flex-col items-start">
+      <section className="w-full flex flex-col items-start mt-8">
         <section className={`mt-2 flex w-full text-left items-start flex-col`}>
           <Title name={"activities"} />
           <ListContainer responsabilities={activities} />

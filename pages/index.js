@@ -16,17 +16,17 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Cristian Iacob</title>
+        <title>{personal.name}</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
       </Head>
 
       <Layout>
         <section className="flex flex-col lg:mx-10 lg:pt-4 lg:w-1/4 xl:w-1/5">
           <PersonalInfo data={personal} />
         </section>
-        <section className="flex rounded mx-2 flex-col lg:w-3/4 xl:w-4/5 divide-y divide-gray-400">
+        <section className="flex rounded mx-6 flex-col lg:w-3/4 xl:w-4/5 divide-y divide-gray-300">
           <Experience data={work} />
           <Education data={education} />
           <Linguistics data={languages} />

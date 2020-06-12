@@ -47,7 +47,7 @@ function Education(props) {
       <section className="w-full flex flex-col items-start">
         {education.map((education, i) => {
           return (
-            <section key={`education-${i}`} className="flex w-full text-left items-start flex-col md:flex-row">
+            <section key={`education-${i}`} className="flex w-full mt-8 text-left items-start flex-col md:flex-row">
               <Title name={education.award} startDate={education.startDate} endDate={education.endDate} />
               <Summary
                 institution={education.name}

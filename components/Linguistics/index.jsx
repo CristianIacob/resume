@@ -53,7 +53,7 @@ const Languages = (props) => {
 function Linguistics(props) {
   return (
     <Group title="Languages" icon={translate}>
-      <section className="w-full flex-col items-center">
+      <section className="w-full flex-col items-center mt-8">
         <NativeLanguage lang={props.data.native} />
         <Languages lang={props.data.language} />
       </section>
