@@ -1,15 +1,6 @@
 import React from "react";
 import Group from "../Group";
-import { translate } from "../../Assets/svg/dynamic-svg";
-
-const NativeLanguage = (props) => {
-  return (
-    <span className="flex flex-row items-center mb-2">
-      <h4 className="mr-4 capitalize font-bold">{props.lang}</h4>
-      <h4 className="text-sm">native</h4>
-    </span>
-  );
-};
+import { translate, flagRomania, flagUSA, flagGermany } from "../../Assets/svg/dynamic-svg";
 
 const ListItem = (props) => {
   return (
@@ -53,9 +44,20 @@ const Languages = (props) => {
 function Linguistics(props) {
   return (
     <Group title="Languages" icon={translate}>
-      <section className="w-full flex-col items-center mt-8">
-        <NativeLanguage lang={props.data.native} />
-        <Languages lang={props.data.language} />
+      <section className="w-full flex-col items-center">
+        <div className="flex items-center mt-8">
+          <span className="w-5 h-5 flex mr-2">{flagRomania}</span>
+          <h1 className="text-xl font-sans capitalize">{props.data.native}</h1>
+        </div>
+        <div className="flex items-center mt-8">
+          <span className="w-5 h-5 flex mr-2">{flagUSA}</span>
+          <h1 className="text-xl font-sans capitalize">English</h1>
+        </div>
+        <div className="flex items-center mt-8">
+          <span className="w-5 h-5 flex mr-2">{flagGermany}</span>
+          <h1 className="text-xl font-sans capitalize">German</h1>
+        </div>
+        {/* <Languages lang={props.data.language} /> */}
       </section>
     </Group>
   );
