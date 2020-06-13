@@ -19,11 +19,14 @@ const InfoItem = (props) => (
 
 const InfoList = (props) => {
   return (
-    <ul className="text-xs divide-y py-4 rounded px-8 shadow md:shadow-none">
-      <InfoItem icon={props.email.icon} link={`mailto:${props.email.value}`} value={props.email.value} />
-      <InfoItem icon={props.location.icon} link={`https://goo.gl/maps/a86eeqDQjDMDjGDo7`} value={props.location.value} />
-      <InfoItem icon={props.code.icon} link={props.code.value} value={`Github`} />
-    </ul>
+    <div className="px-8 shadow md:shadow-none rounded">
+      <ul className="text-xs divide-y py-4">
+        <InfoItem icon={props.email.icon} link={`mailto:${props.email.value}`} value={props.email.value} />
+        <InfoItem icon={props.location.icon} link={`https://goo.gl/maps/a86eeqDQjDMDjGDo7`} value={props.location.value} />
+        <InfoItem icon={props.code.icon} link={props.code.value} value={`Github`} />
+      </ul>
+      <DownloadCV />
+    </div>
   );
 };
 
@@ -41,7 +44,6 @@ function PersonalInfo(props) {
         location={{ icon: locationPin, value: location }}
         code={{ icon: code, value: github }}
       />
-      <DownloadCV />
     </section>
   );
 }
