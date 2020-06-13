@@ -15,9 +15,9 @@
       "endDate": "present",
       "position": "Software Engineer",
       "responsabilities": [
-        "developed web applications",
+        "developed multiple web applications",
         "took part in the complete dev. cycle of multiple projects",
-        "switched between multiple web frameworks",
+        "switched between different web frameworks",
         "worked on frontend, backend and devops tasks",
         "main focus was on frontend",
         "made sure the UI/UX was consistent in the project",
@@ -30,7 +30,11 @@
       "startDate": "1.04.2015",
       "endDate": "15.09.2015",
       "position": "QA Engineer",
-      "responsabilities": ["tested a warehouse web application", "implemented and maintained automated tests", "created bug reports"]
+      "responsabilities": [
+        "tested a warehouse tire management web application",
+        "implemented and maintained automated tests",
+        "created bug reports"
+      ]
     }
   ],
   "education": [
