@@ -1,13 +1,12 @@
 import React from "react";
 
-import Group from "../Group";
 import moment from "moment";
 import { calendar, building } from "../../Assets/svg/dynamic-svg";
 
 const Position = (props) => {
   return (
-    <div className="flex flex-row w-full justify-between sm:flex-row sm:items-center md:w-1/3">
-      <span>
+    <div className="relative flex flex-row w-full justify-between sm:flex-row sm:items-center md:w-1/3">
+      <span className="w-7/12 md:w-auto">
         <h1 className="text-xl font-sans">{props.name}</h1>
         <span className="hidden md:flex">
           <h2 className="inline-block relative w-full md:self-start text-sm mt-1 font-sans text-gray-500">
@@ -16,10 +15,10 @@ const Position = (props) => {
           </h2>
         </span>
       </span>
-      <div className="flex items-center justify-end">
+      <div className="absolute right-0 items-center justify-end">
         <h4 className="flex text-xs h-auto items-center font-sans tracking-wide mt-2 text-gray-600 md:hidden bg-gray-100 px-2 py-px rounded">
-          <span className="w-3 h-full mr-1 fill-current text-gray-500">{calendar}</span>
-          {props.startDate} - {props.endDate}
+          <span className="w-3 h-3 mr-2 fill-current text-gray-500">{calendar}</span>
+          {props.startDate} &#8209; {props.endDate}
         </h4>
       </div>
     </div>
@@ -50,9 +49,9 @@ const Job = (props) => {
         </h2>
       </div>
       <div className="hidden md:flex">
-        <h4 className="text-xs  w-auto font-sans tracking-wide mt-2 text-gray-600 items-center h-full bg-gray-100 px-2 py-px rounded">
-          <span className="inline-block w-3 h-full mr-1 fill-current text-gray-500">{calendar}</span>
-          {props.startDate} - {props.endDate}
+        <h4 className="flex text-xs h-auto font-sans tracking-wide mt-2 text-gray-600 items-center h-full bg-gray-100 px-2 py-px rounded">
+          <span className="w-3 h-3 mr-2 fill-current text-gray-500">{calendar}</span>
+          {props.startDate} &#8209; {props.endDate}
         </h4>
       </div>
       <Activities data={props.activities} company={props.company} />
