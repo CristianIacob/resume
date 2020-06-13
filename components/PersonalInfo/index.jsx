@@ -1,5 +1,6 @@
 import React from "react";
 import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
+import DownloadCV from "./downloadCV";
 
 const Picture = () => <img className="w-40 h-40 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} />;
 
@@ -40,6 +41,7 @@ function PersonalInfo(props) {
         location={{ icon: locationPin, value: location }}
         code={{ icon: code, value: github }}
       />
+      <DownloadCV />
     </section>
   );
 }
