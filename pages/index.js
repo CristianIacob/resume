@@ -26,7 +26,7 @@ function Home() {
         <section className="flex flex-col lg:mx-10 lg:pt-4 lg:w-1/4 xl:w-1/5">
           <PersonalInfo data={personal} />
         </section>
-        <section className="flex rounded mx-6 flex-col lg:w-3/4 xl:w-4/5 divide-y divide-gray-300">
+        <section className="flex mx-6 flex-col lg:w-3/4 xl:w-4/5 divide-y divide-gray-300">
           <Experience data={work} />
           <Education data={education} />
           <Linguistics data={languages} />

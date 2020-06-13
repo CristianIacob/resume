@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ["./components/**/*.jsx", "./components/**/*.js", "./src/**/*.jsx", "./src/**/*.js"],
+  purge: {
+    content: ["./components/**/*.jsx", "./components/**/*.js", "./src/**/*.jsx", "./src/**/*.js"],
+    options: {
+      whitelist: ["mx-6"], // unwanted purge fix
+    },
+  },
   theme: {
     extend: {},
     fontFamily: {
@@ -7,6 +12,4 @@ module.exports = {
       serif: ["Poppins"],
     },
   },
-  variants: {},
-  plugins: [],
 };
