@@ -10,8 +10,8 @@ const Position = (props) => {
         <h1 className="text-xl font-sans">{props.name}</h1>
         <span className="hidden md:flex">
           <h2 className="inline-block relative w-full md:self-start text-sm mt-1 font-sans text-gray-500">
-            <span className="w-3 h-3 mt-1 absolute fill-current text-gray-400">{building}</span>
-            <span className="ml-4">{props.company}</span>
+            <span className="w-4 h-4 mt-1 absolute fill-current text-gray-400">{building}</span>
+            <span className="ml-5">{props.company}</span>
           </h2>
         </span>
       </span>
@@ -44,7 +44,7 @@ const Job = (props) => {
     <section className="flex flex-col md:ml-4 md:w-2/3">
       <div className="flex md:hidden">
         <h2 className="flex items-center text-sm mt-1 font-sans text-gray-500">
-          <span className="w-3 mt-px mr-1 fill-current text-gray-400">{building}</span>
+          <span className="w-4 h-4 mt-1 mr-1 fill-current text-gray-400">{building}</span>
           {props.company}
         </h2>
       </div>
