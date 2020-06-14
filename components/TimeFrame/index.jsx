@@ -3,7 +3,7 @@ import React from "react";
 import moment from "moment";
 import { calendar, building } from "../../Assets/svg/dynamic-svg";
 
-const Position = (props) => {
+const Title = (props) => {
   return (
     <div className="relative flex flex-row w-full justify-between sm:flex-row sm:items-center md:w-1/3">
       <span className="w-7/12 md:w-auto">
@@ -39,7 +39,7 @@ const Activities = (props) => {
   );
 };
 
-const Job = (props) => {
+const Subtitle = (props) => {
   return (
     <section className="flex flex-col md:ml-4 md:w-2/3">
       <div className="flex md:hidden">
@@ -66,8 +66,13 @@ function TimeFrame(props) {
   return (
     <section className="w-full flex flex-col items-start">
       <section className={`flex w-full text-left items-start flex-col md:flex-row mt-8`}>
-        <Position name={title} company={subTitle} startDate={formatDate(period.startDate)} endDate={formatDate(period.endDate)} />
-        <Job company={subTitle} startDate={formatDate(period.startDate)} endDate={formatDate(period.endDate)} activities={activities} />
+        <Title name={title} company={subTitle} startDate={formatDate(period.startDate)} endDate={formatDate(period.endDate)} />
+        <Subtitle
+          company={subTitle}
+          startDate={formatDate(period.startDate)}
+          endDate={formatDate(period.endDate)}
+          activities={activities}
+        />
       </section>
     </section>
   );
