@@ -4,7 +4,7 @@
 
 #### icons
 
-- https://www.flaticon.com/search?word=mind&license=selection&style_id=7
+- https://www.flaticon.com/
 - https://heroicons.dev/
 
 #### fonts
