@@ -53,6 +53,11 @@
     "language": [
       {
         "name": "english",
+        "level": "native"
+      },
+      {
+        "name": "english",
+        "level": "proficient",
         "understanding": {
           "listening": "C2",
           "reading": "C2"
@@ -65,6 +70,7 @@
       },
       {
         "name": "german",
+        "level": "intermediate",
         "understanding": {
           "listening": "C1",
           "reading": "B2"
