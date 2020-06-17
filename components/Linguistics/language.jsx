@@ -24,8 +24,8 @@ function Language(props) {
   const isOpen = i === expanded;
 
   const wrapper = {
-    open: { opacity: 1, height: "auto", transition: { delayChildren: 0.3, duration: 0.5 } },
-    collapsed: { opacity: 0, height: 0, transition: { duration: 0.2, delay: 0.2 } },
+    open: { opacity: 1, height: "auto", transition: { delayChildren: 0.2, duration: 0.3 } },
+    collapsed: { opacity: 0, height: 0, transition: { delay: 0.2, duration: 0.3 } },
   };
 
   return (
@@ -36,7 +36,8 @@ function Language(props) {
         <span className="flex items-center px-2 rounded capitalize flex text-xs text-gray-600 ml-2 bg-gray-100">{level}</span>
         <motion.span
           animate={isOpen ? "open" : "collapsed"}
-          variants={{ collapsed: { rotate: 0, transition: { duration: 0.3 } }, open: { rotate: 180, transition: { duration: 0.5 } } }}
+          variants={{ collapsed: { rotate: 0 }, open: { rotate: 180 } }}
+          transition={{ duration: 0.5 }}
           className="w-5 h-5 flex ml-auto text-gray-600">
           {chevronDown}
         </motion.span>
