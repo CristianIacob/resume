@@ -49,10 +49,9 @@
     }
   ],
   "languages": {
-    "native": "romanian",
     "language": [
       {
-        "name": "english",
+        "name": "romanian",
         "level": "native"
       },
       {

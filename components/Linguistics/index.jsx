@@ -4,7 +4,7 @@ import { translate, flagRomania, flagUSA, flagGermany } from "../../Assets/svg/d
 import Language from "./language";
 
 function Linguistics(props) {
-  const [expanded, setExpanded] = useState(0);
+  const [expanded, setExpanded] = useState(false);
 
   const getIcon = (index) => {
     switch (index) {
@@ -21,7 +21,7 @@ function Linguistics(props) {
 
   return (
     <Group title="Languages" icon={translate}>
-      <section className="w-3/4 flex-col items-center">
+      <section className="w-64 flex-col items-center">
         {props.data.language.map((lang, i) => {
           return (
             <Language
