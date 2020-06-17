@@ -25,12 +25,13 @@ function Linguistics(props) {
         {props.data.language.map((lang, i) => {
           return (
             <Language
-              i={i}
+              index={i}
               expanded={expanded}
               setExpanded={setExpanded}
               icon={getIcon(i)}
               title={lang.name}
               level={lang.level}
+              description={lang.description}
               understanding={lang.understanding}
               speaking={lang.speaking}
               writing={lang.writing}

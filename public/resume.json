@@ -52,7 +52,8 @@
     "language": [
       {
         "name": "romanian",
-        "level": "native"
+        "level": "native",
+        "description": "Born and raised in Oradea, RO."
       },
       {
         "name": "english",
@@ -62,10 +63,10 @@
           "reading": "C2"
         },
         "speaking": {
-          "interaction": "C2",
-          "production": "C2"
+          "interaction": "C1",
+          "production": "C1"
         },
-        "writing": "C1"
+        "writing": "C2"
       },
       {
         "name": "german",
