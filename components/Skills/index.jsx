@@ -1,7 +1,6 @@
 import React from "react";
 import Group from "../Group";
 import { skills } from "../../Assets/svg/dynamic-svg";
-import SimpleBar from "simplebar-react";
 
 const Pills = (props) => (
   <div className="mt-8">
