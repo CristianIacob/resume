@@ -25,6 +25,7 @@ function Linguistics(props) {
         {props.data.language.map((lang, i) => {
           return (
             <Language
+              key={`language-${i}`}
               index={i}
               expanded={expanded}
               setExpanded={setExpanded}

@@ -84,7 +84,7 @@
     ]
   },
   "skills": {
-    "soft-skills": [
+    "softSkills": [
       "good communication skills",
       "team oriented person",
       "problem-solving attitude",
@@ -93,9 +93,22 @@
       "analytical thinking",
       "critical thinking"
     ],
-    "front-end": ["angular.js", "react.js", "next.js", "GWT", "jQuery", "asp.NET", "mobx", "CSS", "SCSS", "tailwindcss", "css modules"],
-    "back-end": ["node.js", "express.js", "axios", "restful api", "mongoDB"],
-    "devops": ["jenkins", "gitlab-ci", "azure container registry", "aws s3", "aws ses"],
+    "frontEnd": [
+      "angular.js",
+      "react.js",
+      "next.js",
+      "GWT",
+      "jQuery",
+      "asp.NET",
+      "redux",
+      "mobx",
+      "CSS",
+      "SCSS",
+      "tailwindcss",
+      "css modules"
+    ],
+    "backEnd": ["node.js", "express.js", "axios", "restful api", "mongoDB"],
+    "devOps": ["jenkins", "gitlab-ci", "azure container registry", "aws S3", "aws SES"],
     "other": ["git", "github", "gitlab", "jira", "scrum", "npm", "yarn"]
   },
   "self": {

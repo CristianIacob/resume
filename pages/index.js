@@ -6,13 +6,14 @@ import Layout from "../components/Layout";
 import Hobbies from "../components/Hobbies";
 import Education from "../components/Education";
 import resume from "../public/resume.json";
+import Skills from "../components/Skills";
 
 /**
  * TODO: Need a link to side-projects somewhere
  */
 
 function Home() {
-  const { personal, work, education, languages, self } = resume;
+  const { personal, work, education, languages, skills, self } = resume;
   return (
     <>
       <Head>
@@ -28,6 +29,7 @@ function Home() {
         </section>
         <section className="flex mx-6 flex-col lg:w-3/4 xl:w-4/5 divide-y divide-gray-300">
           <Experience data={work} />
+          <Skills data={skills} />
           <Education data={education} />
           <Linguistics data={languages} />
           <Hobbies data={self} />
