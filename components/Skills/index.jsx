@@ -22,7 +22,7 @@ function Skills(props) {
   return (
     <Group title="Skills" icon={skills}>
       <section className="mt-8">
-        <h4 className="capitalize text-xl">Technological</h4>
+        <h4 className="capitalize text-xl">Technical</h4>
         <Pills title={"frontend"} values={frontEnd} />
         <Pills title={"backend"} values={backEnd} />
         <Pills title={"devops"} values={devOps} />
