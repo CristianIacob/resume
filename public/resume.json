@@ -90,8 +90,7 @@
       "problem-solving attitude",
       "capable of establishing priorities",
       "capable of adapting and learning quickly",
-      "analytical thinking",
-      "critical thinking"
+      "analytical and critical thinking"
     ],
     "frontEnd": [
       "angular.js",
@@ -104,12 +103,13 @@
       "mobx",
       "CSS",
       "SCSS",
-      "tailwindcss",
-      "css modules"
+      "tailwindCSS",
+      "CSS modules",
+      "jest"
     ],
-    "backEnd": ["node.js", "express.js", "axios", "restful api", "mongoDB"],
-    "devOps": ["jenkins", "gitlab-ci", "azure container registry", "aws S3", "aws SES"],
-    "other": ["git", "github", "gitlab", "jira", "scrum", "npm", "yarn"]
+    "backEnd": ["node.js", "express.js", "axios", "restful API", "mongoDB"],
+    "devOps": ["jenkins", "gitlab-CI", "azure container registry", "aws S3", "aws SES"],
+    "general": ["git", "github", "gitlab", "jira", "scrum", "selenium web driver", "puppeteer"]
   },
   "self": {
     "activities": ["traveling", "movies", "video games", "board games"],
