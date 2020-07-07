@@ -16,6 +16,19 @@ const config = {
   options: {
     maintainAspectRatio: false,
     responsive: true,
+    tooltips: {
+      callbacks: {
+        label: function (tooltipItem, data) {
+          //get the concerned dataset
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+
+          //get the current items value
+          var currentValue = dataset.data[tooltipItem.index];
+
+          return `${currentValue}%`;
+        },
+      },
+    },
   },
 };
 
