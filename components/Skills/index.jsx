@@ -1,6 +1,7 @@
 import React from "react";
 import Group from "../Group";
 import { skills } from "../../Assets/svg/dynamic-svg";
+import TechChart from "./chart";
 
 const Pill = (props) => (
   <li className="px-2 mb-2 mr-2 border border-gray-400 bg-gray-100 text-gray-600 rounded-lg capitalize">{props.skill}</li>
@@ -23,6 +24,7 @@ function Skills(props) {
     <Group title="Skills" icon={skills}>
       <section className="mt-8">
         <h4 className="capitalize text-xl">Technical</h4>
+        <TechChart />
         <Pills title={"frontend"} values={frontEnd} />
         <Pills title={"backend"} values={backEnd} />
         <Pills title={"devops"} values={devOps} />
