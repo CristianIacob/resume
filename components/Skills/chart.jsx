@@ -12,27 +12,10 @@ const config = {
         data: [70, 20, 10],
       },
     ],
-    options: {
-      maintainAspectRatio: false,
-      plugins: {
-        datalabels: {
-          formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map((data) => {
-              sum += data;
-            });
-            let percentage = ((value * 100) / sum).toFixed(2) + "%";
-            return percentage;
-          },
-          color: "#fff",
-        },
-      },
-      title: {
-        display: true,
-        text: "Custom Chart Title",
-      },
-    },
+  },
+  options: {
+    maintainAspectRatio: false,
+    responsive: true,
   },
 };
 
@@ -45,8 +28,11 @@ function TechChart() {
     }
   });
   return (
-    <div style={{ position: "relative", maxWidth: "320px", height: "160px" }} className="mt-1">
-      <canvas ref={chartRef} />
+    <div className="mt-5">
+      <span className="text-base font-sans">Skills usage distribution</span>
+      <div style={{ position: "relative", width: "320px", height: "160px" }} className="mt-1">
+        <canvas ref={chartRef} />
+      </div>
     </div>
   );
 }
