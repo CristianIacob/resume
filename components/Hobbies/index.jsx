@@ -21,6 +21,8 @@ const Item = (props) => {
   );
 };
 
+// TODO: Refactor this code
+
 function Hobbies(props) {
   const { activities, interests } = props.data;
   return (
@@ -39,7 +41,7 @@ function Hobbies(props) {
           <Title name={"interests"} />
           <div className="flex flex-row space-x-12 w-full">
             <Item icon={psychology} text={"psychology"} />
-            <Item icon={designUIUX} text={"UI UX"} />
+            <Item icon={designUIUX} text={"UI/UX"} />
             <Item icon={mindfulness} text={"mindfulness"} />
           </div>
         </section>

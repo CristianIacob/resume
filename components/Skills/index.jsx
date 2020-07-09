@@ -24,10 +24,10 @@ function Skills(props) {
     <Group title="Skills" icon={skills}>
       <section className="mt-8">
         <h4 className="capitalize text-xl">Technical</h4>
-        <TechChart />
         <Pills title={"frontend"} values={frontEnd} />
         <Pills title={"backend"} values={backEnd} />
         <Pills title={"devops"} values={devOps} />
+        <TechChart />
         <Pills title={"general"} values={general} />
       </section>
       <section className="mt-8">

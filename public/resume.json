@@ -109,10 +109,10 @@
     ],
     "backEnd": ["node.js", "express.js", "axios", "restful API", "mongoDB"],
     "devOps": ["jenkins", "gitlab-CI", "azure container registry", "aws S3", "aws SES"],
-    "general": ["git", "github", "gitlab", "jira", "scrum", "selenium web driver", "puppeteer"]
+    "general": ["git", "github", "gitlab", "jira", "scrum", "selenium", "puppeteer"]
   },
   "self": {
     "activities": ["traveling", "movies", "video games", "board games"],
-    "interests": ["psychology", "UI and UX", "mindfulness"]
+    "interests": ["psychology", "UI/UX", "mindfulness"]
   }
 }
