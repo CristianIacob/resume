@@ -1,7 +1,6 @@
 import React from "react";
 import Group from "../Group";
-import moment from "moment";
-import { briefcase, calendar, building } from "../../Assets/svg/dynamic-svg";
+import { briefcase } from "../../Assets/svg/dynamic-svg";
 import TimeFrame from "../TimeFrame";
 
 function Experience(props) {

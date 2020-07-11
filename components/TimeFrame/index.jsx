@@ -1,7 +1,9 @@
 import React from "react";
-
-import moment from "moment";
+import dayjs from "dayjs";
 import { calendar, building } from "../../Assets/svg/dynamic-svg";
+/* needed for date parsing */
+const customParseFormat = require("dayjs/plugin/customParseFormat");
+dayjs.extend(customParseFormat);
 
 const Title = (props) => {
   return (
@@ -51,7 +53,7 @@ const Subtitle = (props) => {
         </h2>
       </div>
       <div className="hidden md:flex">
-        <h4 className="flex text-xs h-auto font-sans tracking-wide mt-2 text-gray-600 items-center h-full bg-gray-100 px-2 py-px rounded">
+        <h4 className="flex text-xs h-auto font-sans tracking-wide mt-2 text-gray-600 items-center bg-gray-100 px-2 py-px rounded">
           <span className="w-3 h-3 mr-2 fill-current text-gray-500">{calendar}</span>
           {props.startDate} &#8209; {props.endDate}
         </h4>
@@ -61,7 +63,7 @@ const Subtitle = (props) => {
   );
 };
 
-const formatDate = (date) => (date !== "present" ? moment(date, "DD.MM.YYYY").format("MMM YYYY") : date);
+const formatDate = (date) => (date !== "present" ? dayjs(date, "DD.MM.YYYY").format("MMM YYYY") : date);
 
 function TimeFrame(props) {
   const { title, subTitle, period, activities } = props;
