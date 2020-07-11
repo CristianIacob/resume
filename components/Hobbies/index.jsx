@@ -44,7 +44,9 @@ const HobbySection = (props) => (
   <section className={`mt-2 flex w-full text-left items-start flex-col`}>
     <Title name={props.title} />
     <div className="flex flex-row space-x-12 w-full">
-      {props.items.map((activity) => console.log("activity", activity) || <Item icon={getIcon(activity)} text={activity} />)}
+      {props.items.map((activity) => (
+        <Item key={`${activity}`} icon={getIcon(activity)} text={activity} />
+      ))}
     </div>
   </section>
 );

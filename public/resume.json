@@ -105,11 +105,13 @@
       "SCSS",
       "tailwindCSS",
       "CSS modules",
-      "jest"
+      "jest",
+      "selenium",
+      "puppeteer"
     ],
     "backEnd": ["node.js", "express.js", "axios", "restful API", "mongoDB"],
-    "devOps": ["jenkins", "gitlab-CI", "azure container registry", "aws S3", "aws SES"],
-    "general": ["git", "github", "gitlab", "jira", "scrum", "selenium", "puppeteer"]
+    "devOps": ["jenkins", "gitlab CI", "azure container registry", "aws S3", "aws SES"],
+    "general": ["git", "github", "gitlab", "jira", "scrum"]
   },
   "self": {
     "activities": ["traveling", "movies", "video games", "board games"],
