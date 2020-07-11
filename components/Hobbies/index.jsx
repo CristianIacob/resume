@@ -2,6 +2,25 @@ import React from "react";
 import Group from "../Group";
 import { boardGames, movieCamera, puzzle, travelBag, videoGames, psychology, designUIUX, mindfulness } from "../../Assets/svg/dynamic-svg";
 
+function getIcon(text) {
+  switch (text) {
+    case "board games":
+      return boardGames;
+    case "mindfulness":
+      return mindfulness;
+    case "movies":
+      return movieCamera;
+    case "psychology":
+      return psychology;
+    case "traveling":
+      return travelBag;
+    case "UI/UX":
+      return designUIUX;
+    case "video games":
+      return videoGames;
+  }
+}
+
 const Title = (props) => {
   return (
     <div className="flex flex-col w-full sm:flex-row sm:items-center md:w-1/4">
@@ -21,30 +40,22 @@ const Item = (props) => {
   );
 };
 
-// TODO: Refactor this code
+const HobbySection = (props) => (
+  <section className={`mt-2 flex w-full text-left items-start flex-col`}>
+    <Title name={props.title} />
+    <div className="flex flex-row space-x-12 w-full">
+      {props.items.map((activity) => console.log("activity", activity) || <Item icon={getIcon(activity)} text={activity} />)}
+    </div>
+  </section>
+);
 
 function Hobbies(props) {
   const { activities, interests } = props.data;
   return (
     <Group title="Hobbies" icon={puzzle}>
       <section className="w-full flex flex-col items-start mt-8">
-        <section className={`mt-2 flex w-full text-left items-start flex-col`}>
-          <Title name={"activities"} />
-          <div className="flex flex-row space-x-12 w-full">
-            <Item icon={travelBag} text={"travel"} />
-            <Item icon={movieCamera} text={"movies"} />
-            <Item icon={videoGames} text={"video games"} />
-            <Item icon={boardGames} text={"board games"} />
-          </div>
-        </section>
-        <section className={`mt-2 flex w-full text-left items-start flex-col`}>
-          <Title name={"interests"} />
-          <div className="flex flex-row space-x-12 w-full">
-            <Item icon={psychology} text={"psychology"} />
-            <Item icon={designUIUX} text={"UI/UX"} />
-            <Item icon={mindfulness} text={"mindfulness"} />
-          </div>
-        </section>
+        <HobbySection title="activities" items={activities} />
+        <HobbySection title="interests" items={interests} />
       </section>
     </Group>
   );
