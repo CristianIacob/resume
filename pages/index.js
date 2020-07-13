@@ -1,12 +1,13 @@
 import Head from "next/head";
-import PersonalInfo from "../components/PersonalInfo";
-import Experience from "../components/Experience";
-import Linguistics from "../components/Linguistics";
+import dynamic from "next/dynamic";
+const Experience = dynamic(() => import("../components/Experience"));
+const PersonalInfo = dynamic(() => import("../components/PersonalInfo"));
+const Linguistics = dynamic(() => import("../components/Linguistics"));
+const Hobbies = dynamic(() => import("../components/Hobbies"));
+const Education = dynamic(() => import("../components/Education"));
+const Skills = dynamic(() => import("../components/Skills"));
 import Layout from "../components/Layout";
-import Hobbies from "../components/Hobbies";
-import Education from "../components/Education";
 import resume from "../public/resume.json";
-import Skills from "../components/Skills";
 
 /**
  * TODO: Need a link to side-projects somewhere
