@@ -3,7 +3,7 @@
     "name": "Cristian I. Iacob",
     "title": "Software Engineer",
     "workplace": "Haufe Group",
-    "birthday": "17.19.1991",
+    "birthday": "17.12.1991",
     "email": "iacob.cristian91@yahoo.com",
     "github": "https://github.com/CristianIacob",
     "location": "Timisoara, RO"
@@ -11,7 +11,7 @@
   "work": [
     {
       "company": "Haufe Group",
-      "startDate": "15.09.2015",
+      "startDate": "Sep 2015",
       "endDate": "present",
       "position": "Software Engineer",
       "responsabilities": [
@@ -27,8 +27,8 @@
     },
     {
       "company": "Netex Consulting",
-      "startDate": "01.04.2015",
-      "endDate": "15.09.2015",
+      "startDate": "Apr 2015",
+      "endDate": "Sep 2015",
       "position": "QA Engineer",
       "responsabilities": [
         "tested the web application of a warehouse for tire management",
@@ -41,8 +41,8 @@
     {
       "name": "Polytechnical University of Timisoara",
       "location": "Timisoara",
-      "startDate": "24.09.2010",
-      "endDate": "15.07.2014",
+      "startDate": "Sep 2010",
+      "endDate": "Jul 2014",
       "description": "something about the university",
       "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
       "award": "Bachelor in Computer Science"

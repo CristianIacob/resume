@@ -1,9 +1,5 @@
 import React from "react";
-import dayjs from "dayjs";
 import { calendar, building } from "../../Assets/svg/dynamic-svg";
-/* needed for date parsing */
-const customParseFormat = require("dayjs/plugin/customParseFormat");
-dayjs.extend(customParseFormat);
 
 const Title = (props) => {
   return (
@@ -63,20 +59,13 @@ const Subtitle = (props) => {
   );
 };
 
-const formatDate = (date) => (date !== "present" ? dayjs(date, "DD.MM.YYYY").format("MMM YYYY") : date);
-
 function TimeFrame(props) {
   const { title, subTitle, period, activities } = props;
   return (
     <section className="w-full flex flex-col items-start">
       <section className={`flex w-full text-left items-start flex-col md:flex-row mt-8`}>
-        <Title name={title} company={subTitle} startDate={formatDate(period.startDate)} endDate={formatDate(period.endDate)} />
-        <Subtitle
-          company={subTitle}
-          startDate={formatDate(period.startDate)}
-          endDate={formatDate(period.endDate)}
-          activities={activities}
-        />
+        <Title name={title} company={subTitle} startDate={period.startDate} endDate={period.endDate} />
+        <Subtitle company={subTitle} startDate={period.startDate} endDate={period.endDate} activities={activities} />
       </section>
     </section>
   );

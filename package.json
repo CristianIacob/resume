@@ -10,7 +10,6 @@
   "dependencies": {
     "autoprefixer": "^9.8.0",
     "chart.js": "^2.9.3",
-    "dayjs": "^1.8.29",
     "framer-motion": "^1.11.1",
     "next": "^9.4",
     "pdfmake": "^0.1.66",
