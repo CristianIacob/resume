@@ -53,6 +53,7 @@ function TechChart() {
       chartRef = new Chart(chartRef.current, config);
     }
   });
+
   return (
     <div className="mt-5">
       <span className="text-base font-sans">Skills usage distribution</span>
