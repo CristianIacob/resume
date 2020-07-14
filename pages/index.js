@@ -20,8 +20,22 @@ function Home() {
       <Head>
         <title>{personal.name}</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" async />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" async />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" type="text/css" />
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" type="text/css" />
+        </noscript>
       </Head>
 
       <Layout>
