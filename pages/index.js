@@ -20,6 +20,10 @@ function Home() {
       <Head>
         <title>{personal.name}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Clean resume page displaying work experience, technical and soft skills, education, language proficiency and hobbies"
+        />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css?family=Open+Sans:wght@300;400&display=swap"
