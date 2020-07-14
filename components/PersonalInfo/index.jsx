@@ -2,7 +2,9 @@ import React from "react";
 import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
 import DownloadCV from "./downloadCV";
 
-const Picture = () => <img className="w-40 h-40 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} />;
+const Picture = () => (
+  <img className="w-40 h-40 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} alt="profile picture" />
+);
 
 const Name = (props) => <h1 className="text-2xl font-serif tracking-wide lg:text-2xl lg:text-center">{props.name}</h1>;
 
@@ -11,7 +13,7 @@ const JobTitle = (props) => <span className="text-base font-sans font-normal tra
 const InfoItem = (props) => (
   <li className="py-2 leading-relaxed px-4 flex items-center">
     <span className="w-3 h-3 mr-3">{props.icon}</span>
-    <a href={props.link} target="_blank" className="hover:text-blue-400">
+    <a href={props.link} rel="noreferrer" target="_blank" className="hover:text-blue-400">
       {props.value}
     </a>
   </li>
