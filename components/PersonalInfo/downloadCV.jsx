@@ -1,11 +1,12 @@
 import React from "react";
 import { download } from "../../Assets/svg/dynamic-svg";
-import { contentPDF } from "./generatePDF";
 
 function DownloadCV() {
   async function createPDF() {
+    const contentPDF = (await import(/* webpackChunkName: "pdfContent" */ "./generatePDF")).default;
     const pdfMake = (await import(/* webpackChunkName: "pdfMake" */ "pdfmake/build/pdfmake.min")).default;
     const pdfFonts = (await import(/* webpackChunkName: "pdfFonts" */ "pdfmake/build/vfs_fonts")).default;
+
     pdfMake.vfs = pdfFonts.pdfMake.vfs;
     pdfMake.createPdf(contentPDF).open();
   }

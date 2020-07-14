@@ -1,4 +1,4 @@
-export const contentPDF = {
+const contentPDF = {
   content: [
     {
       text:
@@ -113,3 +113,5 @@ export const contentPDF = {
     },
   },
 };
+
+export default contentPDF;
