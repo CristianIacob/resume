@@ -21,7 +21,7 @@ const InfoItem = (props) => (
 
 const InfoList = (props) => {
   return (
-    <div className="px-8 shadow md:shadow-none rounded">
+    <div className="px-8 flex flex-col items-center md:items-start">
       <ul className="text-xs divide-y py-4">
         <InfoItem icon={props.email.icon} link={`mailto:${props.email.value}`} value={props.email.value} />
         <InfoItem icon={props.location.icon} link={`https://goo.gl/maps/a86eeqDQjDMDjGDo7`} value={props.location.value} />

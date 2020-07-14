@@ -4,7 +4,7 @@ import { skills } from "../../Assets/svg/dynamic-svg";
 import TechChart from "./chart";
 
 const Pill = (props) => (
-  <li className="px-2 mb-2 mr-2 border border-gray-400 bg-gray-100 text-gray-600 rounded-lg capitalize">{props.skill}</li>
+  <li className="px-2 mb-2 mr-2 border border-gray-400 bg-gray-100 text-gray-700 rounded-lg capitalize">{props.skill}</li>
 );
 
 const Pills = (props) => (

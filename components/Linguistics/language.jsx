@@ -18,7 +18,7 @@ function Language(props) {
       <buttton onClick={() => setExpanded(isOpen ? false : index)} className="flex select-none cursor-pointer items-center">
         <span className="w-5 h-5 flex">{icon}</span>
         <h1 className="text-xl font-sans capitalize ml-2">{title}</h1>
-        <span className="flex items-center px-2 rounded capitalize flex text-xs text-gray-600 ml-2 bg-gray-100">{level}</span>
+        <span className="flex items-center px-2 rounded capitalize text-xs text-gray-700 ml-2 bg-gray-100">{level}</span>
         <motion.span
           animate={isOpen ? "open" : "collapsed"}
           variants={{ collapsed: { rotate: 0 }, open: { rotate: 180 } }}

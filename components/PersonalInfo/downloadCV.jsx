@@ -17,9 +17,9 @@ function DownloadCV() {
 
   return (
     <button
-      className="my-5 bg-blue-600 hover:bg-blue-700 focus:outline-none text-white font-bold py-2 px-4 rounded-lg capitalize flex items-center font-sans tracking-wider text-xs"
+      className="my-5 w-5/6 text-gray-700 shadow hover:shadow-md focus:outline-none font-bold py-2 px-4 rounded-lg capitalize flex items-center font-sans tracking-wider text-xs"
       onClick={handleDownloadCV}>
-      <span className="w-3 h-3 mr-3 text-white fill-current">{download}</span>download resume
+      <span className="w-3 h-3 mr-3 text-gray-700 fill-current">{download}</span>download resume
     </button>
   );
 }
