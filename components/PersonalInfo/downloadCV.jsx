@@ -1,14 +1,17 @@
 import React from "react";
-import pdfMake from "pdfmake/build/pdfmake";
 import { download } from "../../Assets/svg/dynamic-svg";
 import { contentPDF } from "./generatePDF";
-import pdfFonts from "pdfmake/build/vfs_fonts";
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 function DownloadCV() {
-  const handleDownloadCV = () => {
-    console.log("download CV");
+  async function createPDF() {
+    const pdfMake = (await import(/* webpackChunkName: "pdfMake" */ "pdfmake/build/pdfmake.min")).default;
+    const pdfFonts = (await import(/* webpackChunkName: "pdfFonts" */ "pdfmake/build/vfs_fonts")).default;
+    pdfMake.vfs = pdfFonts.pdfMake.vfs;
     pdfMake.createPdf(contentPDF).open();
+  }
+
+  const handleDownloadCV = () => {
+    createPDF();
   };
 
   return (
