@@ -45,7 +45,7 @@ const Subtitle = (props) => {
   return (
     <section className="flex flex-col md:ml-4 md:w-2/3">
       <div className="flex md:hidden">
-        <h2 className="flex items-center text-xs tracking-wide mt-1 font-sans text-gray-500">
+        <h2 className="flex items-center text-sm tracking-wide mt-1 font-sans text-gray-500">
           <span className="w-3 h-3 mt-px mr-1 fill-current text-gray-500">{building}</span>
           <span className="text-gray-700">{props.company}</span>
         </h2>

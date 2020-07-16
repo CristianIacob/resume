@@ -31,11 +31,11 @@ const DetailsSection = (props) => (
           },
         }}
         className="flex flex-wrap">
-        <Skill key={0} icon={hear} title="listening" value={props.understanding?.listening} />
-        <Skill key={1} icon={read} title="reading" value={props.understanding?.reading} />
-        <Skill key={2} icon={interaction} title="speaking interaction" value={props.speaking?.interaction} />
-        <Skill key={3} icon={speak} title="speaking production" value={props.speaking?.production} />
-        <Skill key={4} icon={write} title="writing" value={props.writing} />
+        <Skill key={`language-skill-0`} icon={hear} title="listening" value={props.understanding?.listening} />
+        <Skill key={`language-skill-1`} icon={read} title="reading" value={props.understanding?.reading} />
+        <Skill key={`language-skill-2`} icon={interaction} title="speaking interaction" value={props.speaking?.interaction} />
+        <Skill key={`language-skill-3`} icon={speak} title="speaking production" value={props.speaking?.production} />
+        <Skill key={`language-skill-4`} icon={write} title="writing" value={props.writing} />
       </motion.div>
     )}
   </div>
