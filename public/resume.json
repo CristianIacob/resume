@@ -45,7 +45,7 @@
       "endDate": "Jul 2014",
       "description": "something about the university",
       "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
-      "award": "Bachelor in Computer Science"
+      "award": "Computer Science Degree"
     }
   ],
   "languages": {
@@ -111,7 +111,7 @@
     ],
     "backEnd": ["node.js", "express.js", "axios", "restful API", "mongoDB"],
     "devOps": ["jenkins", "gitlab CI", "azure container registry", "aws S3", "aws SES"],
-    "general": ["git", "github", "gitlab", "jira", "scrum"]
+    "general": ["git", "github", "gitlab", "jira", "scrum", "photoshop", "figma"]
   },
   "self": {
     "activities": ["traveling", "movies", "video games", "board games"],
