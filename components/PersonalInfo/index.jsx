@@ -3,7 +3,11 @@ import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
 import DownloadCV from "./downloadCV";
 
 const Picture = () => (
-  <img className="w-40 h-40 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full" src={`/profile.jpg`} alt="profile picture" />
+  <img
+    className="w-40 h-40 shadow-lg md:w-36 md:h-36 object-cover object-center rounded-full"
+    src={`/profile.jpeg`}
+    alt="profile picture"
+  />
 );
 
 const Name = (props) => <h1 className="text-2xl font-serif tracking-wide lg:text-2xl lg:text-center">{props.name}</h1>;
