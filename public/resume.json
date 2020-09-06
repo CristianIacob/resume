@@ -101,6 +101,7 @@
       "asp.NET",
       "redux",
       "mobx",
+      "axios",
       "CSS",
       "SCSS",
       "tailwindCSS",
@@ -109,7 +110,7 @@
       "selenium",
       "puppeteer"
     ],
-    "backEnd": ["node.js", "express.js", "axios", "restful API", "mongoDB"],
+    "backEnd": ["node.js", "express.js", "restful API", "mongoDB"],
     "devOps": ["jenkins", "gitlab CI", "azure container registry", "aws S3", "aws SES"],
     "general": ["git", "github", "gitlab", "jira", "scrum", "photoshop", "figma"]
   },
