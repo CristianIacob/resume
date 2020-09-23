@@ -22,7 +22,8 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Clean resume page displaying work experience, technical and soft skills, education, language proficiency and hobbies"
+          content="Resume page of Cristian Iacob. 
+          Displaying the overall work experience, skills and other relevant pieces of information for the hiring process."
         />
         <link
           rel="preload"
