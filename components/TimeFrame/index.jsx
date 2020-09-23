@@ -29,7 +29,7 @@ const Title = (props) => {
 
 const Activities = (props) => {
   return (
-    <ul className="text-sm mt-5">
+    <ul className="text-sm mt-5 leading-6">
       {props.data.map((activity, i) => {
         return (
           <li key={`activity-${props.company}-${i}`} className="list-inside list-disc">

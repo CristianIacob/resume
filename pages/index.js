@@ -41,7 +41,6 @@ function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" type="text/css" />
         </noscript>
       </Head>
-
       <Layout>
         <section className="flex flex-col lg:mx-10 lg:pt-4 lg:w-1/4 xl:w-1/5">
           <PersonalInfo data={personal} />

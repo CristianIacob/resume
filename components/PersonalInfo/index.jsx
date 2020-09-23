@@ -1,5 +1,5 @@
 import React from "react";
-import { mail, locationPin, code } from "../../Assets/svg/dynamic-svg";
+import { mail, locationPin, githubIcon, linkedInIcon } from "../../Assets/svg/dynamic-svg";
 import DownloadCV from "./downloadCV";
 
 const Picture = () => (
@@ -30,6 +30,7 @@ const InfoList = (props) => {
         <InfoItem icon={props.email.icon} link={`mailto:${props.email.value}`} value={props.email.value} />
         <InfoItem icon={props.location.icon} link={`https://goo.gl/maps/a86eeqDQjDMDjGDo7`} value={props.location.value} />
         <InfoItem icon={props.code.icon} link={props.code.value} value={`Github`} />
+        <InfoItem icon={props.linkedIn.icon} link={props.linkedIn.value} value={`LinkedIn`} />
       </ul>
       <DownloadCV />
     </div>
@@ -37,7 +38,7 @@ const InfoList = (props) => {
 };
 
 function PersonalInfo(props) {
-  const { name, title, email, github, location } = props.data;
+  const { name, title, email, github, linkedIn, location } = props.data;
   return (
     <section className="my-8 mb-20 flex flex-col items-center lg:pl-0 lg:flex-col lg:my-0">
       <Picture />
@@ -48,7 +49,8 @@ function PersonalInfo(props) {
       <InfoList
         email={{ icon: mail, value: email }}
         location={{ icon: locationPin, value: location }}
-        code={{ icon: code, value: github }}
+        code={{ icon: githubIcon, value: github }}
+        linkedIn={{ icon: linkedInIcon, value: linkedIn }}
       />
     </section>
   );

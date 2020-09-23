@@ -1,11 +1,12 @@
 {
   "personal": {
     "name": "Cristian I. Iacob",
-    "title": "Software Engineer",
+    "title": "Software Developer",
     "workplace": "Haufe Group",
     "birthday": "17.12.1991",
     "email": "iacob.cristian91@yahoo.com",
     "github": "https://github.com/CristianIacob",
+    "linkedIn": "https://www.linkedin.com/in/cristian-iacob-3672571b6/",
     "location": "Timisoara, RO"
   },
   "work": [
@@ -13,16 +14,17 @@
       "company": "Haufe Group",
       "startDate": "Sep 2015",
       "endDate": "present",
-      "position": "Software Engineer",
+      "position": "Software Developer",
       "responsabilities": [
-        "developed multiple web applications",
-        "took part in the complete development cycle of multiple projects",
-        "switched between different web frameworks",
-        "worked on frontend, backend and devops tasks",
-        "main focus was on frontend",
-        "made sure the UI/UX was consistent in the project",
-        "promoted more pair-programming and knowledge sharing within the team",
-        "mentored the less experienced developers on the team"
+        "developed multiple SPAs and also frontend with backend web applications",
+        "example of application topics include - checking whether or not you should be self-employed, a manager for employee warnings used by HR persons, an application for managing job positions but also help companies identify which salary group their employees belong to",
+        "took part in the complete development cycle of those projects",
+        "progressed through different web frameworks, starting with GWT(1y exp), Angular v4(1,5y exp) and currently React(3y+)",
+        "at first, worked exclusively on frontend tasks",
+        "over the years, to expand my knowledge and skill pool, I've also worked on backend and DevOps tasks",
+        "made sure the design stayed consistent between the SMA projects by paying attention to the details and design choices made by different designers and also created shared frontend components",
+        "encouraged others to do pair-programming and knowledge sharing within the team, either through meeting presentations or wiki pages",
+        "helped less experienced developers on the team with their task, and tried to make sure they learned something in the process by asking questions and about their opinions"
       ]
     },
     {
@@ -32,8 +34,9 @@
       "position": "QA Engineer",
       "responsabilities": [
         "tested the web application of a warehouse for tire management",
-        "implemented and maintained automated tests",
-        "created bug reports"
+        "implemented and maintained automated tests in Java using Selenium Web Driver",
+        "used Jira for task management and creating bug reports",
+        "had the chance to learn the importance of code quality, working inside a team and writing production code"
       ]
     }
   ],
@@ -44,7 +47,13 @@
       "startDate": "Sep 2010",
       "endDate": "Jul 2014",
       "description": "something about the university",
-      "skills": ["mathematics", "computer programming", "computer architecture", "object oriented programming"],
+      "skills": [
+        "mathematics",
+        "computer programming",
+        "computer architecture",
+        "object oriented programming",
+        "data structures and algorithms"
+      ],
       "award": "Computer Science Degree"
     }
   ],
@@ -99,21 +108,26 @@
       "next.js",
       "GWT",
       "jQuery",
+      "java",
       "asp.NET",
       "redux",
       "mobx",
       "axios",
+      "webpack",
       "CSS",
       "SCSS",
       "tailwindCSS",
       "CSS modules",
       "jest",
       "selenium",
-      "puppeteer"
+      "puppeteer",
+      "react-transition-group",
+      "react-spring",
+      "framer motion"
     ],
     "backEnd": ["node.js", "express.js", "restful API", "mongoDB"],
     "devOps": ["jenkins", "gitlab CI", "azure container registry", "aws S3", "aws SES"],
-    "general": ["git", "github", "gitlab", "jira", "scrum", "photoshop", "figma"]
+    "general": ["git", "gitflow", "github", "gitlab", "jira", "scrum", "photoshop", "figma"]
   },
   "self": {
     "activities": ["traveling", "movies", "video games", "board games"],
