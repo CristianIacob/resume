@@ -3,4 +3,5 @@ module.exports = {
     config.plugins.push(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/));
     return config;
   },
+  webpack5: false,
 };
