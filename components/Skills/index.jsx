@@ -32,7 +32,7 @@ function Skills(props) {
       </section>
       <section className="mt-8">
         <h4 className="text-xl">Soft skills</h4>
-        <ul className="text-sm list-disc list-inside mt-5">
+        <ul className="text-sm list-disc list-inside mt-5 leading-6">
           {softSkills.map((skill, i) => (
             <li key={`soft-skill-${i}`}>{skill}</li>
           ))}

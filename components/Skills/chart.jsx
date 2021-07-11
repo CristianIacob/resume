@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Chart from "chart.js";
+import Chart from "chart.js/auto";
 
 const config = {
   type: "doughnut",
